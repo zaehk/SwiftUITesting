@@ -11,9 +11,9 @@
 		E70E554F22C3B25500F64737 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E554E22C3B25500F64737 /* PlayerRow.swift */; };
 		E70E555122C3B25E00F64737 /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E555022C3B25E00F64737 /* StatText.swift */; };
 		E70E555322C3B27D00F64737 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E555222C3B27D00F64737 /* Player.swift */; };
+		E76A059222C3BBCD00E0694A /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A059122C3BBCD00E0694A /* PlayerView.swift */; };
 		E7EDAD1622BD074E00206859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EDAD1522BD074E00206859 /* AppDelegate.swift */; };
 		E7EDAD1822BD074E00206859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EDAD1722BD074E00206859 /* SceneDelegate.swift */; };
-		E7EDAD1A22BD074E00206859 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EDAD1922BD074E00206859 /* ContentView.swift */; };
 		E7EDAD1C22BD075000206859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7EDAD1B22BD075000206859 /* Assets.xcassets */; };
 		E7EDAD1F22BD075000206859 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7EDAD1E22BD075000206859 /* Preview Assets.xcassets */; };
 		E7EDAD2222BD075000206859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7EDAD2022BD075000206859 /* LaunchScreen.storyboard */; };
@@ -35,10 +35,10 @@
 		E70E554E22C3B25500F64737 /* PlayerRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
 		E70E555022C3B25E00F64737 /* StatText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
 		E70E555222C3B27D00F64737 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E76A059122C3BBCD00E0694A /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		E7EDAD1222BD074E00206859 /* SwiftUITesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EDAD1522BD074E00206859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7EDAD1722BD074E00206859 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E7EDAD1922BD074E00206859 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7EDAD1B22BD075000206859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7EDAD1E22BD075000206859 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7EDAD2122BD075000206859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,11 +109,11 @@
 				E70E554B22C3B23F00F64737 /* CustomViews */,
 				E7EDAD1522BD074E00206859 /* AppDelegate.swift */,
 				E7EDAD1722BD074E00206859 /* SceneDelegate.swift */,
-				E7EDAD1922BD074E00206859 /* ContentView.swift */,
 				E7EDAD1B22BD075000206859 /* Assets.xcassets */,
 				E7EDAD2022BD075000206859 /* LaunchScreen.storyboard */,
 				E7EDAD2322BD075000206859 /* Info.plist */,
 				E7EDAD1D22BD075000206859 /* Preview Content */,
+				E76A059122C3BBCD00E0694A /* PlayerView.swift */,
 			);
 			path = SwiftUITesting;
 			sourceTree = "<group>";
@@ -238,11 +238,11 @@
 			files = (
 				E70E554D22C3B24F00F64737 /* PlayerList.swift in Sources */,
 				E7EDAD1622BD074E00206859 /* AppDelegate.swift in Sources */,
+				E76A059222C3BBCD00E0694A /* PlayerView.swift in Sources */,
 				E7EDAD1822BD074E00206859 /* SceneDelegate.swift in Sources */,
 				E70E554F22C3B25500F64737 /* PlayerRow.swift in Sources */,
 				E70E555322C3B27D00F64737 /* Player.swift in Sources */,
 				E70E555122C3B25E00F64737 /* StatText.swift in Sources */,
-				E7EDAD1A22BD074E00206859 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
