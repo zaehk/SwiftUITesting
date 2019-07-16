@@ -21,7 +21,9 @@ struct PlayerView : View {
                 .resizable()
                 .frame(height: 250)
             
-            Image(player.imageName).clipShape(Circle())
+            Image(player.imageName)
+                .resizable().scaledToFit()
+                .clipShape(Circle())
                 .background(Circle().foregroundColor(.white))
                 .overlay(Circle().stroke(Color.white,lineWidth: 4))
                 .shadow(radius: 15).offset(x: 0, y: -80).padding(.bottom, -70)
@@ -30,7 +32,8 @@ struct PlayerView : View {
             
             Text(player.name)
                 .font(.system(size: 40))
-                .bold()
+                .bold().minimumScaleFactor(0.5)
+                
             
             StatText(statName: "Age", statValue: String(player.age))
             StatText(statName: "Height", statValue: String(player.height))
@@ -47,7 +50,17 @@ struct PlayerView : View {
 #if DEBUG
 struct PlayerView_Previews : PreviewProvider {
     static var previews: some View {
-        PlayerView(player: players[1])
+        Group{
+            
+            PlayerView(player: players[1])
+            .previewDevice("iPhone XS Max")
+            .previewDisplayName("Iphone XS MAX")
+            PlayerView(player: players[2])
+            .previewDevice("iPhone SE")
+            PlayerView(player: players[3])
+            .previewDevice("iPhone XR")
+            
+        }
     }
 }
 #endif

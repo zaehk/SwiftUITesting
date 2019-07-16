@@ -17,10 +17,14 @@ struct PlayerRow : View {
                 Image(player.imageName).resizable()
                 .scaledToFit()
                 .clipShape(Circle())
+                .frame(width: 50.0, height: 50.0)
                 .background(Circle())
                 .foregroundColor(player.team.color)
             
             Text(player.name).font(.largeTitle)
+                .bold()
+                .minimumScaleFactor(0.5)
+            
             
             Spacer()
             
@@ -32,18 +36,7 @@ struct PlayerRow : View {
 #if DEBUG
 struct PlayerRow_Previews : PreviewProvider {
     static var previews: some View {
-        VStack {
-            PlayerRow(player: players[0]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[1]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[2]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[3]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[4]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[5]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[6]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[7]).previewLayout(.fixed(width: 500, height: 100))
-            PlayerRow(player: players[8]).previewLayout(.fixed(width: 500, height: 100))
-            
-        }
+            PlayerRow(player: players[2]).previewLayout(.sizeThatFits)
     }
 }
 #endif

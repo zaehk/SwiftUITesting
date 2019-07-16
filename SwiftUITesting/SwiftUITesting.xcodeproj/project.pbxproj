@@ -71,6 +71,7 @@
 			children = (
 				E70E554E22C3B25500F64737 /* PlayerRow.swift */,
 				E70E554C22C3B24F00F64737 /* PlayerList.swift */,
+				E76A059122C3BBCD00E0694A /* PlayerView.swift */,
 				E70E555022C3B25E00F64737 /* StatText.swift */,
 			);
 			path = CustomViews;
@@ -113,7 +114,6 @@
 				E7EDAD2022BD075000206859 /* LaunchScreen.storyboard */,
 				E7EDAD2322BD075000206859 /* Info.plist */,
 				E7EDAD1D22BD075000206859 /* Preview Content */,
-				E76A059122C3BBCD00E0694A /* PlayerView.swift */,
 			);
 			path = SwiftUITesting;
 			sourceTree = "<group>";

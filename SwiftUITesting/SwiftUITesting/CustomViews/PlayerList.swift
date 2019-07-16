@@ -13,7 +13,7 @@ struct PlayerList : View {
         NavigationView{
             List(players){
                 player in
-                NavigationButton(destination: PlayerView(player: player)){
+                NavigationLink(destination: PlayerView(player: player)){
                     PlayerRow(player: player)
                 }
             }.navigationBarTitle(Text("NBA Finals Players"), displayMode:  .large)
@@ -24,7 +24,14 @@ struct PlayerList : View {
 #if DEBUG
 struct PlayerList_Previews : PreviewProvider {
     static var previews: some View {
-        PlayerList()
+        Group {
+            PlayerList()
+                .previewDevice("iPhone SE")
+            PlayerList()
+                .previewDevice("iPhone XS Max")
+            PlayerList()
+                .previewDevice("iPhone XR")
+        }
     }
 }
 #endif
